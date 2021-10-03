@@ -1,0 +1,342 @@
+{
+    "Parkingas": {
+      "Automobiliai": [
+        {
+          "Pavadinimas": "Volkswagen",
+          "Modelis": "Passat",
+          "PagaminimoData": "2014-08-03",
+          "Rida": {
+            "atstumoMatavimoVienetas": "km",
+            "rida": "205000"
+          },
+          "Specifikacijos": {
+            "Variklis": {
+              "KuroTipas": "Dyzelis",
+              "DarbinisTuris": {
+                "turioMatavimoVienetas": "cm3",
+                "turis": "1600"
+              },
+              "Galia": [
+                {
+                  "galiosMatavimoVientenas": "kW",
+                  "galia": "77"
+                },
+                {
+                  "galiosMatavimoVientenas": "AG",
+                  "galia": "105"
+                }
+              ]
+            },
+            "MaksimalusGreitis": {
+              "greicioMatavimoVienetas": "km/h",
+              "greitis": "220"
+            },
+            "Greitinimas": {
+              "laikoMatavimoVienetas": "s",
+              "greitinimas": "7.8"
+            },
+            "DegaluSanaudos": {
+              "turioMatavimoVienetas": "l",
+              "Mieste": "5.2",
+              "Uzmiestyje": "3.6",
+              "Vidutines": "4.1"
+            }
+          }
+        },
+        {
+          "Pavadinimas": "Ford",
+          "Modelis": "Mustang",
+          "PagaminimoData": "2020-06-01",
+          "Rida": {
+            "atstumoMatavimoVienetas": "km",
+            "rida": "9981"
+          },
+          "Specifikacijos": {
+            "Variklis": {
+              "KuroTipas": "Benzinas",
+              "DarbinisTuris": {
+                "turioMatavimoVienetas": "cm3",
+                "tuis": "5000"
+              },
+              "Galia": [
+                {
+                  "galiosMatavimoVientenas": "kW",
+                  "galia": "338"
+                },
+                {
+                  "galiosMatavimoVientenas": "AG",
+                  "galia": "460"
+                }
+              ]
+            },
+            "MaksimalusGreitis": {
+              "greicioMatavimoVienetas": "km/h",
+              "greitis": "300"
+            },
+            "Greitinimas": {
+              "laikoMatavimoVienetas": "s",
+              "greitinimas": "3.3"
+            },
+            "DegaluSanaudos": {
+              "turioMatavimoVienetas": "l",
+              "Mieste": "16.1",
+              "Uzmiestyje": "9.9",
+              "Vidutines": "13.3"
+            }
+          }
+        },
+        {
+          "Pavadinimas": "Mercedes-Benz",
+          "Modelis": "S350",
+          "PagaminimoData": "2018-05-01",
+          "Rida": {
+            "atstumoMatavimoVienetas": "km",
+            "rida": "76980"
+          },
+          "Specifikacijos": {
+            "Variklis": {
+              "KuroTipas": "Benzinas",
+              "DarbinisTuris": {
+                "turioMatavimoVienetas": "cm3",
+                "turis": "2900"
+              },
+              "Galia": [
+                {
+                  "galiosMatavimoVientenas": "kW",
+                  "galia": "210"
+                },
+                {
+                  "galiosMatavimoVientenas": "AG",
+                  "galia": "286"
+                }
+              ]
+            },
+            "MaksimalusGreitis": {
+              "greicioMatavimoVienetas": "km/h",
+              "greitis": "250"
+            },
+            "Greitinimas": {
+              "laikoMatavimoVienetas": "s",
+              "greitinimas": "6.8"
+            },
+            "DegaluSanaudos": {
+              "turioMatavimoVienetas": "l",
+              "Mieste": "11.2",
+              "Uzmiestyje": "8.4",
+              "Vidutines": "10.0"
+            }
+          }
+        },
+        {
+          "Pavadinimas": "Porsche",
+          "Modelis": "911",
+          "PagaminimoData": "2021-05-01",
+          "Rida": {
+            "atstumoMatavimoVienetas": "km",
+            "rida": "7000"
+          },
+          "Specifikacijos": {
+            "Variklis": {
+              "KuroTipas": "Benzinas",
+              "DarbinisTuris": {
+                "turioMatavimoVienetas": "cm3",
+                "turis": "2981"
+              },
+              "Galia": [
+                {
+                  "galiosMatavimoVientenas": "kW",
+                  "galia": "331"
+                },
+                {
+                  "galiosMatavimoVientenas": "AG",
+                  "galia": "450"
+                }
+              ]
+            },
+            "MaksimalusGreitis": {
+              "greicioMatavimoVienetas": "km/h",
+              "greitis": "340"
+            },
+            "Greitinimas": {
+              "laikoMatavimoVienetas": "s",
+              "greitinimas": "3.5"
+            },
+            "DegaluSanaudos": {
+              "turioMatavimoVienetas": "l",
+              "Mieste": "11.1",
+              "Uzmiestyje": "7.8",
+              "Vidutines": "9.0"
+            }
+          }
+        },
+        {
+          "Pavadinimas": "Tesla",
+          "Modelis": "Model S",
+          "PagaminimoData": "2020-02-01",
+          "Rida": {
+            "atstumoMatavimoVienetas": "km",
+            "rida": "13000"
+          },
+          "Specifikacijos": {
+            "Variklis": {
+              "KuroTipas": "Elektra",
+              "DarbinisTuris": {
+                "turioMatavimoVienetas": null,
+                "turis": null
+              },
+              "Galia": [
+                {
+                  "galiosMatavimoVientenas": "kW",
+                  "galia": "570"
+                },
+                {
+                  "galiosMatavimoVientenas": "AG",
+                  "galia": "775"
+                }
+              ]
+            },
+            "MaksimalusGreitis": {
+              "greicioMatavimoVienetas": "km/h",
+              "greitis": "249"
+            },
+            "Greitinimas": {
+              "laikoMatavimoVienetas": "s",
+              "greitinimas": "2.07"
+            },
+            "DegaluSanaudos": {
+              "turioMatavimoVienetas": "l",
+              "Mieste": null,
+              "Uzmiestyje": null,
+              "Vidutines": null
+            }
+          }
+        },
+        {
+          "Pavadinimas": "Aston Martin",
+          "Modelis": "Vanquish",
+          "PagaminimoData": "2017-04-01",
+          "Rida": {
+            "atstumoMatavimoVienetas": "km",
+            "rida": "81000"
+          },
+          "Specifikacijos": {
+            "Variklis": {
+              "KuroTipas": "Benzinas",
+              "DarbinisTuris": {
+                "turioMatavimoVienetas": "cm3",
+                "turis": "5935"
+              },
+              "Galia": [
+                {
+                  "galiosMatavimoVientenas": "kW",
+                  "galia": "444"
+                },
+                {
+                  "galiosMatavimoVientenas": "AG",
+                  "galia": "604"
+                }
+              ]
+            },
+            "MaksimalusGreitis": {
+              "greicioMatavimoVienetas": "km/h",
+              "greitis": "324"
+            },
+            "Greitinimas": {
+              "laikoMatavimoVienetas": "s",
+              "greitinimas": "3.5"
+            },
+            "DegaluSanaudos": {
+              "turioMatavimoVienetas": "l",
+              "Mieste": "19.6",
+              "Uzmiestyje": "9.3",
+              "Vidutines": "13.1"
+            }
+          }
+        },
+        {
+          "Pavadinimas": "Alfa Romeo",
+          "Modelis": "Giulia",
+          "PagaminimoData": "2020-10-05",
+          "Rida": {
+            "atstumoMatavimoVienetas": "km",
+            "rida": "13500"
+          },
+          "Specifikacijos": {
+            "Variklis": {
+              "KuroTipas": "Benzinas",
+              "DarbinisTuris": {
+                "turioMatavimoVienetas": "cm3",
+                "turis": "1995"
+              },
+              "Galia": [
+                {
+                  "galiosMatavimoVientenas": "kW",
+                  "galia": "147"
+                },
+                {
+                  "galiosMatavimoVientenas": "AG",
+                  "galia": "200"
+                }
+              ]
+            },
+            "MaksimalusGreitis": {
+              "greicioMatavimoVienetas": "km/h",
+              "greitis": "307"
+            },
+            "Greitinimas": {
+              "laikoMatavimoVienetas": "s",
+              "greitinimas": "3.9"
+            },
+            "DegaluSanaudos": {
+              "turioMatavimoVienetas": "l",
+              "Mieste": "9.0",
+              "Uzmiestyje": "7.0",
+              "Vidutines": "8.0"
+            }
+          }
+        },
+        {
+          "Pavadinimas": "Audi",
+          "Modelis": "R8",
+          "PagaminimoData": "2019-04-05",
+          "Rida": {
+            "atstumoMatavimoVienetas": "km",
+            "rida": "6653"
+          },
+          "Specifikacijos": {
+            "Variklis": {
+              "KuroTipas": "Benzinas",
+              "DarbinisTuris": {
+                "turioMatavimoVienetas": "cm3",
+                "turis": "5200"
+              },
+              "Galia": [
+                {
+                  "galiosMatavimoVientenas": "kW",
+                  "galia": "449"
+                },
+                {
+                  "galiosMatavimoVientenas": "AG",
+                  "galia": "610"
+                }
+              ]
+            },
+            "MaksimalusGreitis": {
+              "greicioMatavimoVienetas": "km/h",
+              "greitis": "324"
+            },
+            "Greitinimas": {
+              "laikoMatavimoVienetas": "s",
+              "greitinimas": "3.4"
+            },
+            "DegaluSanaudos": {
+              "turioMatavimoVienetas": "l",
+              "Mieste": "16.6",
+              "Uzmiestyje": "10.0",
+              "Vidutines": "13.3"
+            }
+          }
+        }
+      ]
+    }
+  }
