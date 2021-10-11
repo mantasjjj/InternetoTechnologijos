@@ -1,18 +1,31 @@
-1. //Parkingas/Automobilis[1]/Specifikacijos
-1.1 ancestor: //Parkingas/Automobilis[1]/Specifikacijos/ancestor::*
-1.2 descendant: //Parkingas/Automobilis[1]/Specifikacijos/descendant::*
-1.3 following-sibling: //Parkingas/Automobilis[1]/Specifikacijos/following-sibling::*
-1.4 preceding-sibling: //Parkingas/Automobilis[1]/Specifikacijos/preceding-sibling::*
-1.5 following: //Parkingas/Automobilis[1]/Specifikacijos/following::*
-1.6 preceding: //Parkingas/Automobilis[1]/Specifikacijos/preceding::*
-1.7 attribute: //Parkingas/Automobilis[1]/Specifikacijos/Variklis/DarbinisTuris/@turioMatavimoVienetas (nezinau ar gerai, nes Specifikacijos neturi atributu, bet jo anukas turi)
+1. /Parkingas/Automobilis[1]/Specifikacijos
+1.1 ancestor: /Parkingas/Automobilis[1]/Specifikacijos/ancestor::*
+1.2 descendant: /Parkingas/Automobilis[1]/Specifikacijos/descendant::*
+1.3 following-sibling: /Parkingas/Automobilis[1]/Specifikacijos/following-sibling::*
+1.4 preceding-sibling: /Parkingas/Automobilis[1]/Specifikacijos/preceding-sibling::*
+1.5 following: /Parkingas/Automobilis[1]/Specifikacijos/following::*
+1.6 preceding: /Parkingas/Automobilis[1]/Specifikacijos/preceding::*
+1.7 attribute: /Parkingas/Automobilis[1]/Specifikacijos/Variklis/DarbinisTuris/@turioMatavimoVienetas (nezinau ar gerai, nes Specifikacijos neturi atributu, bet jo anukas turi)
 
-2. 
+2. descendant::*[KuroTipas/text() = /Parkingas/Automobilis[3]/descendant::*/KuroTipas/text()]
 
 3. sum(): sum(/Parkingas/Automobilis/Rida/text()) //visu Ridu suma
    count(): count(/Parkingas/Automobilis/Specifikacijos/DegaluSanaudos) //Kiek yra degalu sanaudos zymiu visame dokumente
 
 4. > operandas: /Parkingas/Automobilis[1]/Rida/text() > /Parkingas/Automobilis[2]/Rida/text()
-   < operandas: /Parkingas/Automobilis[1]/Rida/text() < 2500000
+   < operandas: /Parkingas/Automobilis[1]/Rida/text() + 1000000 < 2500000
    = operandas: /Parkingas/Automobilis[1]/Modelis/text() = "Passat"
    + operandas: /Parkingas/Automobilis[1]/Rida/text() + /Parkingas/Automobilis[2]/Rida/text()
+
+5. /descendant::Automobilis[position() mod 2 = 1]/Pavadinimas[text() = "Tesla"]/text()
+
+/descendant::Automobilis[position() mod 2 = 1] -> sukuria aibe is nelyginiu Automobilio zymiu, t.y. Automobilis[1], Automobilis[3], etc.
+/Pavadinimas[text() = "Tesla"] -> Atfiltruoja is jau isrinktu Automobilio zymiu tik tas zymias, kuriu Pavadinimo zyme yra "Tesla"
+/text() -> parodo atfiltruotos zymes Pavadinimo teksta
+
+6. 6.1 /descendant::Rida != 9981 (ima visus ir ziuri, jei bent vienas nelygus -> true)
+   6.2 /descendant::Automobilis/Pavadinimas = "Volkswagen" (bent vienas sutampa -> true)
+   6.3 /descendant::Automobilis = true()
+   6.4 /descendant::DarbinisTuris = /descendant::Rida (bent vienas sutampa -> true)
+ 
+7. /descendant::Rida > /descendant::Variklis/DarbinisTuris (darom dekarto sandauga ir ziurim ar bent viena rida yra > uz darbini turi)
