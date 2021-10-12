@@ -7,7 +7,7 @@
 1.6 preceding: /Parkingas/Automobilis[1]/Specifikacijos/preceding::*
 1.7 attribute: /Parkingas/Automobilis[1]/Specifikacijos/Variklis/DarbinisTuris/@turioMatavimoVienetas (nezinau ar gerai, nes Specifikacijos neturi atributu, bet jo anukas turi)
 
-2. descendant::*[KuroTipas/text() = /Parkingas/Automobilis[3]/descendant::*/KuroTipas/text()]
+2. descendant::Variklis[KuroTipas/text() = /Parkingas/Automobilis[3]/descendant::*/KuroTipas/text()]
 
 3. sum(): sum(/Parkingas/Automobilis/Rida/text()) //visu Ridu suma
    count(): count(/Parkingas/Automobilis/Specifikacijos/DegaluSanaudos) //Kiek yra degalu sanaudos zymiu visame dokumente
@@ -28,4 +28,4 @@
    6.3 /descendant::Automobilis = true()
    6.4 /descendant::DarbinisTuris = /descendant::Rida (bent vienas sutampa -> true)
  
-7. /descendant::Rida > /descendant::Variklis/DarbinisTuris (darom dekarto sandauga ir ziurim ar bent viena rida yra > uz darbini turi)
+7. /descendant::Rida < /descendant::Variklis/DarbinisTuris (darom dekarto sandauga ir ziurim ar bent viena rida yra > uz darbini turi)
