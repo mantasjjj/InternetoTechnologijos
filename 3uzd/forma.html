@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="lt">
+
+<head>
+  <meta charset="utf-8">
+  <title>IT 3 užduotis | Forma</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Pagrindinis</a>
+    </nav>
+
+    <section>
+        <h2>Registruokitės bandomąjam važiavimui:</h2>
+        <form name="forma" action="lentele.html" method="post">
+            Vardas: <input required type="text" name="vardas"/><br> 
+            Pavardė: <input required type="text" name="pavarde"/><br>
+            Pašto adresas: <input required type="text" name="email"/><br>
+            <label>
+                <input type="radio" name="lytis" value="V"/> vyras
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="lytis" value="M"/> moteris
+            </label>
+            <br>
+            Sutikti su taisyklėmis: <input required type="checkbox"/><br>
+            <input type="submit" value="Siųsti"/>
+            <input type="reset" value="Išvalyti"/>
+        </form>
+    </section>
+
+
+</body>
+</html>

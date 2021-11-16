@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Parkingas xmlns:mj="mif.vu.lt/mantasParkingas">
+    <Automobilis>
+        <Pavadinimas>Volkswagen</Pavadinimas>
+        <Modelis>Passat</Modelis>
+        <PagaminimoData>2014-08-03</PagaminimoData>
+        <Rida atstumoMatavimoVienetas="km">205000</Rida>
+        <Specifikacijos>
+            <Variklis>
+                <KuroTipas>Dyzelis</KuroTipas>
+                <DarbinisTuris turioMatavimoVienetas="cm3">1600</DarbinisTuris>
+                <Galia galiosMatavimoVienetas="kW">77</Galia>
+                <Galia galiosMatavimoVienetas="AG">105</Galia>
+            </Variklis>
+            <MaksimalusGreitis greicioMatavimoVienetas="km/h">220</MaksimalusGreitis>
+            <Greitinimas laikoMatavimoVienetas="s">7.8</Greitinimas>
+            <DegaluSanaudos turioMatavimoVienetas="l">
+                <Mieste>5.2</Mieste>
+                <Uzmiestyje>3.6</Uzmiestyje>
+                <Vidutines>4.1</Vidutines>
+            </DegaluSanaudos>
+        </Specifikacijos>
+        <Pastabos>
+            <TA>Yra</TA>
+            <KainosPokytis>25000 23000 18000 16000 15000 12000 10000 9800</KainosPokytis>
+            ir t.t.
+        </Pastabos>
+    </Automobilis>
+    <VolkswagenAutomobilis>
+        <Pavadinimas>Volkswagen</Pavadinimas>
+        <Modelis>Passat</Modelis>
+        <PagaminimoData>2014-08-03</PagaminimoData>
+        <Rida atstumoMatavimoVienetas="km">205000</Rida>
+        <Specifikacijos>
+            <Variklis>
+                <KuroTipas>Dyzelis</KuroTipas>
+                <DarbinisTuris turioMatavimoVienetas="cm3">1600</DarbinisTuris>
+                <Galia galiosMatavimoVienetas="kW">77</Galia>
+                <Galia galiosMatavimoVienetas="AG">105</Galia>
+            </Variklis>
+            <MaksimalusGreitis greicioMatavimoVienetas="km/h">220</MaksimalusGreitis>
+            <Greitinimas laikoMatavimoVienetas="s">7.8</Greitinimas>
+            <DegaluSanaudos turioMatavimoVienetas="l">
+                <Mieste>5.2</Mieste>
+                <Uzmiestyje>3.6</Uzmiestyje>
+                <Vidutines>4.1</Vidutines>
+            </DegaluSanaudos>
+        </Specifikacijos>
+    </VolkswagenAutomobilis>
+    <Automobilis>
+        <Pavadinimas>Ford</Pavadinimas>
+        <Modelis>Mustang</Modelis>
+        <PagaminimoData>2020-06-01</PagaminimoData>
+        <Rida atstumoMatavimoVienetas="km">9981</Rida>
+        <Specifikacijos>
+            <Variklis>
+                <KuroTipas>Benzinas</KuroTipas>
+                <DarbinisTuris turioMatavimoVienetas="cm3">5000</DarbinisTuris>
+                <Galia galiosMatavimoVienetas="kW">338</Galia>
+                <Galia galiosMatavimoVienetas="AG">460</Galia>
+            </Variklis>
+            <MaksimalusGreitis greicioMatavimoVienetas="km/h">300</MaksimalusGreitis>
+            <Greitinimas laikoMatavimoVienetas="s">3.3</Greitinimas>
+            <DegaluSanaudos turioMatavimoVienetas="l">
+                <Mieste>16.1</Mieste>
+                <Uzmiestyje>9.9</Uzmiestyje>
+                <Vidutines>13.3</Vidutines>
+            </DegaluSanaudos>
+        </Specifikacijos>
+    </Automobilis>
+    <Automobilis>
+        <Pavadinimas>Mercedes-Benz</Pavadinimas>
+        <Modelis>S350</Modelis>
+        <PagaminimoData>2018-05-01</PagaminimoData>
+        <Rida atstumoMatavimoVienetas="km">76980</Rida>
+        <Specifikacijos>
+            <Variklis>
+                <KuroTipas>Benzinas</KuroTipas>
+                <DarbinisTuris turioMatavimoVienetas="cm3">2900</DarbinisTuris>
+                <Galia galiosMatavimoVienetas="kW">210</Galia>
+                <Galia galiosMatavimoVienetas="AG">286</Galia>
+            </Variklis>
+            <MaksimalusGreitis greicioMatavimoVienetas="km/h">250</MaksimalusGreitis>
+            <Greitinimas laikoMatavimoVienetas="s">6.8</Greitinimas>
+            <DegaluSanaudos turioMatavimoVienetas="l">
+                <Mieste>11.2</Mieste>
+                <Uzmiestyje>8.4</Uzmiestyje>
+                <Vidutines>10.0</Vidutines>
+            </DegaluSanaudos>
+        </Specifikacijos>
+    </Automobilis>
+    <Automobilis>
+        <Pavadinimas>Porsche</Pavadinimas>
+        <Modelis>911</Modelis>
+        <PagaminimoData>2021-05-01</PagaminimoData>
+        <Rida atstumoMatavimoVienetas="km">7000</Rida>
+        <Specifikacijos>
+            <Variklis>
+                <KuroTipas>Benzinas</KuroTipas>
+                <DarbinisTuris turioMatavimoVienetas="cm3">2981</DarbinisTuris>
+                <Galia galiosMatavimoVienetas="kW">331</Galia>
+                <Galia galiosMatavimoVienetas="AG">450</Galia>
+            </Variklis>
+            <MaksimalusGreitis greicioMatavimoVienetas="km/h">340</MaksimalusGreitis>
+            <Greitinimas laikoMatavimoVienetas="s">3.5</Greitinimas>
+            <DegaluSanaudos turioMatavimoVienetas="l">
+                <Mieste>11.1</Mieste>
+                <Uzmiestyje>7.8</Uzmiestyje>
+                <Vidutines>9.0</Vidutines>
+            </DegaluSanaudos>
+        </Specifikacijos>
+    </Automobilis>
+    <Automobilis>
+        <Pavadinimas>Aston Martin</Pavadinimas>
+        <Modelis>Vanquish</Modelis>
+        <PagaminimoData>2017-04-01</PagaminimoData>
+        <Rida atstumoMatavimoVienetas="km">81000</Rida>
+        <Specifikacijos>
+            <Variklis>
+                <KuroTipas>Benzinas</KuroTipas>
+                <DarbinisTuris turioMatavimoVienetas="cm3">5935</DarbinisTuris>
+                <Galia galiosMatavimoVienetas="kW">444</Galia>
+                <Galia galiosMatavimoVienetas="AG">604</Galia>
+            </Variklis>
+            <MaksimalusGreitis greicioMatavimoVienetas="km/h">324</MaksimalusGreitis>
+            <Greitinimas laikoMatavimoVienetas="s">3.5</Greitinimas>
+            <DegaluSanaudos turioMatavimoVienetas="l">
+                <Mieste>19.6</Mieste>
+                <Uzmiestyje>9.3</Uzmiestyje>
+                <Vidutines>13.1</Vidutines>
+            </DegaluSanaudos>
+        </Specifikacijos>
+    </Automobilis>
+    <Automobilis>
+        <Pavadinimas>Alfa Romeo</Pavadinimas>
+        <Modelis>Giulia</Modelis>
+        <PagaminimoData>2020-10-05</PagaminimoData>
+        <Rida atstumoMatavimoVienetas="km">13500</Rida>
+        <Specifikacijos>
+            <Variklis>
+                <KuroTipas>Benzinas</KuroTipas>
+                <DarbinisTuris turioMatavimoVienetas="cm3">1995</DarbinisTuris>
+                <Galia galiosMatavimoVienetas="kW">147</Galia>
+                <Galia galiosMatavimoVienetas="AG">200</Galia>
+            </Variklis>
+            <MaksimalusGreitis greicioMatavimoVienetas="km/h">307</MaksimalusGreitis>
+            <Greitinimas laikoMatavimoVienetas="s">3.9</Greitinimas>
+            <DegaluSanaudos turioMatavimoVienetas="l">
+                <Mieste>9.0</Mieste>
+                <Uzmiestyje>7.0</Uzmiestyje>
+                <Vidutines>8.0</Vidutines>
+            </DegaluSanaudos>
+        </Specifikacijos>
+    </Automobilis>
+    <Automobilis>
+        <Pavadinimas>Audi</Pavadinimas>
+        <Modelis>R8</Modelis>
+        <PagaminimoData>2019-04-05</PagaminimoData>
+        <Rida atstumoMatavimoVienetas="km">6653</Rida>
+        <Specifikacijos>
+            <Variklis>
+                <KuroTipas>Benzinas</KuroTipas>
+                <DarbinisTuris turioMatavimoVienetas="cm3">5200</DarbinisTuris>
+                <Galia galiosMatavimoVienetas="kW">449</Galia>
+                <Galia galiosMatavimoVienetas="AG">610</Galia>
+            </Variklis>
+            <MaksimalusGreitis greicioMatavimoVienetas="km/h">324</MaksimalusGreitis>
+            <Greitinimas laikoMatavimoVienetas="s">3.4</Greitinimas>
+            <DegaluSanaudos turioMatavimoVienetas="l">
+                <Mieste>16.6</Mieste>
+                <Uzmiestyje>10.0</Uzmiestyje>
+                <Vidutines>13.3</Vidutines>
+            </DegaluSanaudos>
+        </Specifikacijos>
+    </Automobilis>
+</Parkingas>

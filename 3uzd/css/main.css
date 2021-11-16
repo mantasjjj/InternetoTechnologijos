@@ -1,0 +1,66 @@
+body {
+    width: 48%;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 3%;
+}
+
+table, tr, th, td {
+    border: #000 solid 1px;
+}
+
+/* Attribute selectors*/
+a[title]{
+    color: #000;
+}
+
+a:hover {
+    color: aqua;
+    text-decoration: none;
+}
+
+/* Class selectors */
+.passatImg {
+    height: 25%;
+    width: 25% !important;
+}
+
+p.paragraph-black {
+    color: #000;
+    border: lightblue solid;
+}
+
+span {
+    border: inherit;
+}
+
+/* ID selectors */
+#passatImg {
+    width: 100%;
+}
+
+p#paragraph-red {
+    color: #990000;
+}
+
+/* descendant selectors */
+ul.listUL li {
+    color: #00b300;
+}
+
+/* child selectors */
+section > h3 {
+    font-size: 16px;
+    font-weight: 900;
+}
+
+/* Media queries */
+
+@media screen and (orientation: portrait) { 
+    body {
+        width: 89%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 3%;
+    }
+}

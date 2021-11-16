@@ -1,0 +1,202 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+      
+    "definitions": {
+        "turioMatavimoVienetas": {
+        "type": "string"
+      }
+    },
+      
+    "type": "object",
+    "properties": {
+      "Parkingas": {
+        "type": "object",
+        "properties": {
+          "Automobiliai": {
+            "type": "array",
+            "items": [
+              {
+                "type": "object",
+                "properties": {
+                  "Pavadinimas": {
+                    "type": "string",
+                    "pattern": "w+"
+                  },
+                  "Modelis": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 100
+                  },
+                  "PagaminimoData": {
+                    "type": "string",
+                    "pattern": "[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+                  },
+                  "Rida": {
+                    "type": "object",
+                    "properties": {
+                      "atstumoMatavimoVienetas": {
+                        "type": "string"
+                      },
+                      "rida": {
+                        "type": "integer",
+                        "minimum": 1
+                      }
+                    },
+                    "required": [
+                      "atstumoMatavimoVienetas",
+                      "rida"
+                    ]
+                  },
+                  "Specifikacijos": {
+                    "type": "object",
+                    "properties": {
+                      "Variklis": {
+                        "type": "object",
+                        "properties": {
+                          "KuroTipas": {
+                            "type": "string",
+                            "enum": ["Benzinas", "Elektra", "Dyzelis"]
+                          },
+                          "DarbinisTuris": {
+                            "type": "object",
+                            "properties": {
+                              "turioMatavimoVienetas": 
+                              { "$ref": "#/definitions/turioMatavimoVienetas" },
+                              "turis": {
+                                "anyOf": [
+                                  { "type": "string", "maxLength": 5},
+                                  { "type": "number", "minimum": 1}
+                                ]
+                              }
+                            },
+                            "required": [
+                              "turioMatavimoVienetas",
+                              "turis"
+                            ]
+                          },
+                          "Galia": {
+                            "type": "array",
+                            "items": [
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "galiosMatavimoVientenas": {
+                                    "type": "string"
+                                  },
+                                  "galia": {
+                                    "oneOf": [
+                                      { "type": "string", "maxLength": 5},
+                                      { "type": "number", "minimum": 1}
+                                    ]
+                                  }
+                                },
+                                "required": [
+                                  "galiosMatavimoVientenas",
+                                  "galia"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "galiosMatavimoVientenas": {
+                                    "type": "string"
+                                  },
+                                  "galia": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "galiosMatavimoVientenas",
+                                  "galia"
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "required": [
+                          "KuroTipas",
+                          "DarbinisTuris",
+                          "Galia"
+                        ]
+                      },
+                      "MaksimalusGreitis": {
+                        "type": "object",
+                        "properties": {
+                          "greicioMatavimoVienetas": {
+                            "type": "string"
+                          },
+                          "greitis": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "greicioMatavimoVienetas",
+                          "greitis"
+                        ]
+                      },
+                      "Greitinimas": {
+                        "type": "object",
+                        "properties": {
+                          "laikoMatavimoVienetas": {
+                            "type": "string"
+                          },
+                          "greitinimas": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "laikoMatavimoVienetas",
+                          "greitinimas"
+                        ]
+                      },
+                      "DegaluSanaudos": {
+                        "type": "object",
+                        "properties": {
+                          "turioMatavimoVienetas": 
+                          { "$ref": "#/definitions/turioMatavimoVienetas" },
+                          "Mieste": {
+                            "type": "string"
+                          },
+                          "Uzmiestyje": {
+                            "type": "string"
+                          },
+                          "Vidutines": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "turioMatavimoVienetas",
+                          "Mieste",
+                          "Uzmiestyje",
+                          "Vidutines"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "Variklis",
+                      "MaksimalusGreitis",
+                      "Greitinimas",
+                      "DegaluSanaudos"
+                    ]
+                  }
+                },
+                "required": [
+                  "Pavadinimas",
+                  "Modelis",
+                  "PagaminimoData",
+                  "Rida",
+                  "Specifikacijos"
+                ]
+              }
+            ]
+          }
+        },
+        "required": [
+          "Automobiliai"
+        ]
+      }
+    },
+    "required": [
+      "Parkingas"
+    ]
+  }

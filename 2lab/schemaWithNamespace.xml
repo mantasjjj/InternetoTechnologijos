@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mj="mif.vu.lt/mantasParkingas" elementFormDefault="qualified" targetNamespace="mif.vu.lt/mantasParkingas">
+    <xs:element name="Parkingas" type="mj:ParkingoType">
+        <xs:unique name="AutomobilioUnikalumas">
+            <xs:selector xpath="mj:Automobilis"/>
+            <xs:field xpath="@vin"/>
+        </xs:unique>
+        <xs:keyref name="NuorodaIAuto" refer="mj:AutomobilioUnikalumas">
+            <xs:selector xpath="mj:PirktasAuto"/>
+            <xs:field xpath="@vinKodas"/>
+        </xs:keyref>
+    </xs:element>
+    <xs:complexType name="ParkingoType">
+        <xs:sequence minOccurs="1" maxOccurs="unbounded">
+            <xs:element name="Automobilis" type="mj:AutomobilioType" minOccurs="0"/>
+            <xs:element name="VolkswagenAutomobilis" type="mj:VolkswagenAutomobilis" minOccurs="0"/>
+            <xs:element name="AutomobilisExtended" type="mj:AutomobilisExtended" minOccurs="0"/>
+            <xs:element name="PirktasAuto" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="AutomobilioType">
+        <xs:sequence>
+            <xs:element name="Pavadinimas" type="mj:PavadinimasTypeSuApribojimas" /> 
+            <xs:element name="Modelis" type="xs:string"/>
+            <xs:element name="PagaminimoData" type="xs:string"/>
+            <xs:element name="Rida" type="mj:RidaType" minOccurs="0"/>
+            <xs:element name="Specifikacijos" type="mj:SpecifikacijosType"/>
+            <xs:element name="Pastabos" type="mj:PastabosType" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute name="vin" type="xs:string" use="optional"/>
+    </xs:complexType>
+    <xs:complexType name="PastabosType" mixed="true">
+        <xs:sequence>
+            <xs:element name="TA" type="xs:string"/> 
+            <xs:element name="KainosPokytis" type="mj:KainosPokyciuList" minOccurs="0" maxOccurs="1"/>
+            <xs:any minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="KainosPokyciuList">
+        <xs:list itemType="xs:integer"/>
+    </xs:simpleType>
+    <xs:complexType name="VolkswagenAutomobilis">
+        <xs:complexContent>
+            <xs:restriction base="mj:AutomobilioType">
+                <xs:sequence>
+                    <xs:element name="Pavadinimas" type="mj:PavadinimasTypeSuApribojimas" fixed="Volkswagen"/>
+                    <xs:element name="Modelis" type="xs:string"/>
+                    <xs:element name="PagaminimoData" type="xs:string"/>
+                    <xs:element name="Rida" type="mj:RidaTypeRestricted"/>
+                    <xs:element name="Specifikacijos" type="mj:SpecifikacijosType"/>
+                </xs:sequence>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="AutomobilisExtended">
+        <xs:complexContent>
+            <xs:extension base="mj:AutomobilioType">
+                <xs:attribute name="kalba" type="xs:string"/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:simpleType name="PavadinimasTypeSuApribojimas">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="100"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="SpecifikacijosType">
+        <xs:sequence>
+            <xs:element name="Variklis" type="mj:VariklisType"/>
+            <xs:element name="MaksimalusGreitis" type="mj:MaksimalusGreitisType"/>
+            <xs:element name="Greitinimas" type="mj:GreitinimasType"/>
+            <xs:element name="DegaluSanaudos" type="mj:DegaluSanaudosType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="RidaType">
+        <xs:simpleContent>
+            <xs:extension base="xs:integer">
+                <xs:attribute name="atstumoMatavimoVienetas" type="xs:string"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="RidaTypeRestricted">
+        <xs:simpleContent>
+            <xs:restriction base="mj:RidaType">
+                <xs:pattern value="\d{6}"></xs:pattern>
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="RidaTypeExtended">
+        <xs:simpleContent>
+            <xs:extension base="mj:RidaType">
+                <xs:attribute name="maza" type="xs:boolean"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="MaksimalusGreitisType">
+        <xs:simpleContent>
+            <xs:extension base="xs:integer">
+                <xs:attribute name="greicioMatavimoVienetas" type="xs:string"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="VariklisType">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element name="KuroTipas" type="mj:KuroType"/>
+            </xs:choice>
+            <xs:element name="DarbinisTuris" type="mj:TurisType"/>
+            <xs:element name="Galia" type="mj:GaliosVienetasType" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="GreitinimasType">
+        <xs:simpleContent>
+            <xs:extension base="xs:double">
+                <xs:attribute name="laikoMatavimoVienetas" type="xs:string"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="TurisType">
+        <xs:simpleContent>
+            <xs:extension base="xs:integer">
+                <xs:attribute name="turioMatavimoVienetas" type="xs:string"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="GaliosVienetasType">
+        <xs:simpleContent>
+            <xs:extension base="xs:integer">
+                <xs:attribute name="galiosMatavimoVienetas" type="xs:string"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="DegaluSanaudosType">
+        <xs:sequence>
+            <xs:element name="Mieste" type="xs:string"/>
+            <xs:element name="Uzmiestyje" type="xs:string"/>
+            <xs:element name="Vidutines" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="turioMatavimoVienetas" type="xs:string" />
+    </xs:complexType>
+    <xs:simpleType name="KuroType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="Dyzelis|Benzinas|Elektra"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
