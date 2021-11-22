@@ -70,3 +70,39 @@ $(document).ready(function() {
         )
     });
 });
+
+// 4.
+
+var responseId = "";
+
+$("#submit").click(function () {
+    var jsonData = {
+        "name": $("#name").val(),
+        "lastName": $("#lastName").val(),
+        "age": $("#gimMetai").val(),
+        "email": $("#email").val(),
+        "agreed": true
+    }
+
+    $.ajax({ 
+        type:"POST",
+        url:"https://jsonblob.com/api/jsonBlob/",
+        data: JSON.stringify(jsonData), 
+        contentType: 'application/json',
+        success: function(res) {
+            $(".table-for-info").append(
+                '<tr>' + 
+                '<td>' + res.name + " " + res.lastName + '</td>' 
+                + '<td>' + res.age + '</td>'
+                + '<td>' + res.email + '</td>'
+                + '<td>' + res.agreed + '</td>' 
+                + '</tr>'
+            )
+            console.log(res);
+            console.log("Added");
+        }.bind(this),
+        error: function(xhr, status, err) {
+            console.error(xhr, status, err.toString());
+        }.bind(this)
+    }); 
+});
