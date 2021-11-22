@@ -1,0 +1,104 @@
+<!doctype html>
+
+<html lang="lt">
+
+<head>
+  <meta charset="utf-8">
+  <title>IT 4 užduotis | Forma</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <section>
+        <h2>Registracijos forma</h2>
+        <form name="forma" id="forma" action="" method="post" novalidate>
+
+            Vardas: <input required type="text" name="vardas" id="name" />
+            <br> 
+            <p id="popup-error">Iveskite validu varda</p>
+
+            Pavardė: <input required type="text" name="pavarde"/>
+            <br>
+
+            Pašto adresas: <input required type="text" name="email"/>
+            <br>
+
+            Amzius: <input id="gimMetai" type="text" name="metai"/>
+            <br>
+            <p id="popup-error-number">Iveskite validzius metus</p>
+
+            Data: <input id="data" type="text" name="metai"/>
+            <br>
+            <p id="popup-error-date">Iveskite validzia data</p>
+
+            Ismesti paragrafa: <input id="para" type="text" name="para"/>
+            <br>
+
+            Ideti paragrafa: <input id="paraTxt" type="text" name="paraTxt"/>
+            <br>
+
+            <label>
+                <input type="radio" name="lytis" value="V"/> vyras
+            </label>
+            <br>
+
+            <label>
+                <input type="radio" name="lytis" value="M"/> moteris
+            </label>
+            <br>
+
+            Sutikti su taisyklėmis: <input required type="checkbox" id="check"/>
+            <br>
+
+            <input type="button" value="Validuoti" id="validate" onclick="validateForm()"/>
+            <input type="submit" value="Siusti" id="submit"/>
+            <input type="reset" value="Išvalyti"/>
+        </form>
+    </section>
+
+    <section>
+        <h2>Gauti duomenys:</h2>
+        <table>
+            <tr>
+                <th rowspan="2">Pilnas vardas</th>
+                <th colspan="3">Pirkėjas</th>
+            </tr>
+            <tr>
+                <th>Lytis</th>
+                <th>El. Paštas</th>
+                <th>Sutinka su taisyklėmis</th>
+            </tr>
+            <tr>
+                <td>Testas Testaitis</td>
+                <td>Vyras</td>
+                <td>testas@gmail.com</td>
+                <td>TAIP</td>
+            </tr>
+        </table>
+    </section>
+
+    <section style="margin-top: 3%;">
+        <input type="button" value="Spauskite, kad pakeisti teksta" id="changeText"/>
+        <p class="textForChange">
+            Sveiki, cia dar nepakeistas tekstas......
+        </p>
+        <input type="button" value="Spauskite, kad pakeisti teksto spalva" id="changeColor"/>
+        <input type="button" value="Spauskite, kad ismesti pasirinkta paragrafa" id="deleteParagraph"/>
+        <p class="2">
+            2 2 2 2 2 2
+        </p>
+        <p class="3">
+            3 3 3 3 3 3
+        </p>
+        <p class="4">
+            4 4 4 4 4 4
+        </p>
+        <input type="button" value="Spauskite, kad prideti paragrafa" id="appendParagraph"/>
+        <div class="paragraphs">
+
+        </div>
+    </section>
+</body>
+<script src="js/script.js"></script>
+</html>
