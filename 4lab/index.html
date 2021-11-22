@@ -18,10 +18,10 @@
             <br> 
             <p id="popup-error">Iveskite validu varda</p>
 
-            Pavardė: <input required type="text" name="pavarde"/>
+            Pavardė: <input required type="text" name="pavarde" id="lastName"/>
             <br>
 
-            Pašto adresas: <input required type="text" name="email"/>
+            Pašto adresas: <input required type="text" name="email" id="email"/>
             <br>
 
             Amzius: <input id="gimMetai" type="text" name="metai"/>
@@ -52,29 +52,29 @@
             <br>
 
             <input type="button" value="Validuoti" id="validate" onclick="validateForm()"/>
-            <input type="submit" value="Siusti" id="submit"/>
+            <input type="button" value="Siusti" id="submit"/>
             <input type="reset" value="Išvalyti"/>
         </form>
     </section>
 
     <section>
         <h2>Gauti duomenys:</h2>
-        <table>
+        <table class="table-for-info">
             <tr>
                 <th rowspan="2">Pilnas vardas</th>
                 <th colspan="3">Pirkėjas</th>
             </tr>
             <tr>
-                <th>Lytis</th>
+                <th>Amzius</th>
                 <th>El. Paštas</th>
                 <th>Sutinka su taisyklėmis</th>
             </tr>
-            <tr>
+            <!-- <tr>
                 <td>Testas Testaitis</td>
                 <td>Vyras</td>
                 <td>testas@gmail.com</td>
                 <td>TAIP</td>
-            </tr>
+            </tr> -->
         </table>
     </section>
 
